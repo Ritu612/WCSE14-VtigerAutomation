@@ -1,41 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-10T16:10:50 IST" name="Default suite" finished-at="2022-12-10T16:11:04 IST" duration-ms="13865">
+  <suite started-at="2022-12-21T22:04:36 IST" name="Default suite" finished-at="2022-12-21T22:05:04 IST" duration-ms="28489">
     <groups>
+      <group name="RegressionSuite">
+        <method signature="CreateOrganizationWithIndustryTest.demoTest()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" name="demoTest" class="vTiger.OrganizationTests.CreateOrganizationWithIndustryTest"/>
+      </group> <!-- RegressionSuite -->
+      <group name="SmokeSuite">
+        <method signature="CreateOrganizationWithIndustryTest.createOrganizationWithIndustryTest()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" name="createOrganizationWithIndustryTest" class="vTiger.OrganizationTests.CreateOrganizationWithIndustryTest"/>
+      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2022-12-10T16:10:50 IST" name="Default test" finished-at="2022-12-10T16:11:04 IST" duration-ms="13865">
-      <class name="vTiger.GenericUtilities.BaseClassPractice">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:10:50 IST" name="bsConfig" finished-at="2022-12-10T16:10:50 IST" duration-ms="6" status="PASS">
+    <test started-at="2022-12-21T22:04:36 IST" name="Default test" finished-at="2022-12-21T22:05:04 IST" duration-ms="28489">
+      <class name="vTiger.OrganizationTests.CreateOrganizationWithIndustryTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:04:36 IST" name="bsConfig" finished-at="2022-12-21T22:04:36 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcCofig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:10:50 IST" name="bcCofig" finished-at="2022-12-10T16:10:54 IST" duration-ms="3969" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:04:36 IST" name="bcConfig" finished-at="2022-12-21T22:04:42 IST" duration-ms="5569" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bcCofig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:10:54 IST" name="bmConfig" finished-at="2022-12-10T16:10:58 IST" duration-ms="4210" status="PASS">
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:04:42 IST" name="bmConfig" finished-at="2022-12-21T22:04:47 IST" duration-ms="5080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="test()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:10:58 IST" name="test" finished-at="2022-12-10T16:10:58 IST" duration-ms="18" status="PASS">
+        <test-method signature="createOrganizationWithIndustryTest()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:04:47 IST" name="createOrganizationWithIndustryTest" finished-at="2022-12-21T22:04:58 IST" duration-ms="10879" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:10:58 IST" name="amConfig" finished-at="2022-12-10T16:11:03 IST" duration-ms="5356" status="PASS">
+        </test-method> <!-- createOrganizationWithIndustryTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:04:58 IST" name="amConfig" finished-at="2022-12-21T22:05:04 IST" duration-ms="6490" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-F4E7MDH', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9157f3bc2b697426c759919df694a48, clickElement {id=a92a2ec7-a8e2-4bf4-ba2a-b9e8c66b6275}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50596/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9157f3bc2b697426c759919df694a48)] -> xpath: //a[text()='Sign Out']]
+Session ID: b9157f3bc2b697426c759919df694a48]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-F4E7MDH', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9157f3bc2b697426c759919df694a48, clickElement {id=a92a2ec7-a8e2-4bf4-ba2a-b9e8c66b6275}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50596/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9157f3bc2b697426c759919df694a48)] -> xpath: //a[text()='Sign Out']]
+Session ID: b9157f3bc2b697426c759919df694a48
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at vTiger.ObjectRepository.HomePage.logOutOfApp(HomePage.java:93)
+at vTiger.GenericUtilities.BaseClass.amConfig(BaseClass.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:11:03 IST" name="acConfig" finished-at="2022-12-10T16:11:04 IST" duration-ms="272" status="PASS">
+        <test-method signature="demoTest()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:05:04 IST" name="demoTest" finished-at="2022-12-21T22:05:04 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-F4E7MDH', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9157f3bc2b697426c759919df694a48, clickElement {id=a92a2ec7-a8e2-4bf4-ba2a-b9e8c66b6275}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50596/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9157f3bc2b697426c759919df694a48)] -> xpath: //a[text()='Sign Out']]
+Session ID: b9157f3bc2b697426c759919df694a48]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-F4E7MDH', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9157f3bc2b697426c759919df694a48, clickElement {id=a92a2ec7-a8e2-4bf4-ba2a-b9e8c66b6275}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50596/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b9157f3bc2b697426c759919df694a48)] -> xpath: //a[text()='Sign Out']]
+Session ID: b9157f3bc2b697426c759919df694a48
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at vTiger.ObjectRepository.HomePage.logOutOfApp(HomePage.java:93)
+at vTiger.GenericUtilities.BaseClass.amConfig(BaseClass.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoTest -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:05:04 IST" name="bmConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671640504614" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:05:04 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671640504640" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.GenericUtilities.BaseClassPractice@595b007d]" started-at="2022-12-10T16:11:04 IST" name="asConfig" finished-at="2022-12-10T16:11:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:05:04 IST" name="amConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671640504640" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.OrganizationTests.CreateOrganizationWithIndustryTest@79e2c065]" started-at="2022-12-21T22:05:05 IST" name="asConfig" finished-at="2022-12-21T22:05:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- vTiger.GenericUtilities.BaseClassPractice -->
+      </class> <!-- vTiger.OrganizationTests.CreateOrganizationWithIndustryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
