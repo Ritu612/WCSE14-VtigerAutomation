@@ -36,7 +36,8 @@ public class CreateContactWithOrganizationPOMTest extends BaseClass
         String LASTNAME	=eUtil.readDataFromExcel("contacts", 4, 2);
     	String ORGNAME=eUtil.readDataFromExcel("Contacts", 4,3)+jUtil.getRandomNumber();
 
-    	 
+    	
+    	
     	//Step5: Navigate to Organization
     	 
     	 HomePage hp=new HomePage(driver);
